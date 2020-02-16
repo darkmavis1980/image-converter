@@ -12,11 +12,3 @@ def convertImage(source, format, quality = 100):
     dest_file = "{}/{}.{}".format(source_path, file_name, format)
     print(dest_file)
     im.save(dest_file, format, quality = quality)
-
-    # imagePath = "./images/_DSF344.webp" #example ./test.jpg
-    # outputPath = "./images/converted.jpg" #example ./myWebPimage.webp
-    # quality = 100 #example 100
-
-
-    # im = Image.open(imagePath)
-    # im.save(outputPath,'jpeg',quality = quality)
