@@ -1,6 +1,13 @@
 from enum import Enum
 
+# formats = {
+#     'JPEG': 'jpg',
+#     'WEBP': 'webp',
+#     'PNG': 'png',
+# }
+
 class Formats(Enum):
-    JPEG = 'jpeg'
+    JPG = 'jpg'
+    JPEG = 'jpg'
     PNG = 'png'
     WEBP = 'webp'
