@@ -13,4 +13,4 @@ webp = "==0.1.0a15"
 Pillow = "==7.0.0"
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
