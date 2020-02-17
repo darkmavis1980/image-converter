@@ -1,3 +1,19 @@
+# Packages
+*.egg
+*.egg-info
+build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+MANIFEST
+
+# setuptools
+dist
+
 env/
 images/
 __pycache__/
