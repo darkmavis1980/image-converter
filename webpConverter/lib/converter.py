@@ -1,6 +1,9 @@
+#! /usr/bin/env python3
+
 from PIL import Image
 from enum import Enum
 import os
+import argparse
 
 class Formats(Enum):
     jpg = 'jpg'
@@ -30,5 +33,16 @@ def convertImage(source, file_format, quality = 100):
         print('File format not recognized')
     except Exception as error:
         print(error)
-    finally:
+    else:
         print("Your image has been converted to {file_format}!".format(file_format=file_format))
+
+def initConvert():
+    parser = argparse.ArgumentParser(description="Convert images from and to webp")
+    parser.add_argument('--source', '-s', dest="source", metavar="-s", type=str, help="Image source")
+    parser.add_argument('--format', '-f', dest="format", type=str, help="Format to convert to", default="web")
+    parser.add_argument('--quality', '-q', dest="quality", type=int, help="Image quality (0-100) range", default=100)
+    args = parser.parse_args()
+    convertImage(args.source, args.format, args.quality)
+
+if __name__ == "__main__":
+    initConvert()

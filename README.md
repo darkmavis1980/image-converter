@@ -43,3 +43,20 @@ By default it will convert to the maximum image quality (max = 100), but if you 
 # This will convert a jpg image to a WebP
 python3 webpConverter --source /path/to/my/image.jpg --format webp --quality 60
 ```
+
+## Build the project
+
+```bash
+# Runt he setup.py script
+python3 setup.py sdist bdist_wheel
+
+# Install it locally
+pip install .
+
+# or with live changes
+pip install -e .
+```
+
+## More info on how to package a python project
+
+- [python-packaging](https://python-packaging.readthedocs.io/en/latest/minimal.html)
